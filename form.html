@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Biodata</legend>
+        <form action=".\response.html" name="biodata"
+        target="_blank" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+<br><br>
+
+<label for="DOB">DOB:</label>
+<input type="Date" id="dob" name="dob" required>
+<br><br>
+
+<label for="attempt">Attempt:</label>
+<input type="number" id="attempt" name="attempt" min="1">
+<br><br>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
+<br><br>
+
+<label for="add">Address:</label>
+<textarea name="text" id="Add" rows="7" cols="30"></textarea>
+<br><br>
+
+<label for="tel">Phone:</label>
+<input type="tel" id="tel" name="tel" placeholder="Enter your phone number">
+<br><br>
+
+<label for="gender">Gender:</label>
+<input type="radio" id="male" name="gender" value="male" required >
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female" required>
+<label for="female">Female</label>
+<br><br>
+
+<label for="check">Vehicles you have</label>
+<input type="checkbox" id="bike" name="Vehicle1" value="bike" required>
+<label for="bike">Bike</label>
+<input type="checkbox" id="car" name="Vehicle1" value="car" required>
+<label for="car">Car</label>
+<br><br>
+ 
+<label for="Select">Select your Language:</label>
+<select name="select" id="select">
+    <option value="">Select your language</option>
+    <optgroup label="Programming Languages"></optgroup>
+
+     <option value="c">c</option>
+    <option value="C++">C++</option>
+<option value="Java">Java</option>
+<optgroup label="Frontend Technologies"></optgroup>
+
+<option value="html">HTML</option>
+<option value="CSS">CSS</option>
+<option value="Java script">Java Script</option>
+</select>
+<br><br>
+
+<label for="file">File Upload:</label>
+<input type="file" itemref="file" name="file" required>
+<br><br>
+
+<label for="pass">Password:</label>
+<input type="Password" id="pass" name="pass" placeholder="Enter your password" required>
+<br><br>
+<label for="appoint">Appointment:</label>
+<input type="time" id="Appoint" name="Appoint" required>
+<br><br> 
+
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+
+</form>
+    </fieldset>
+</body>
+</html>
